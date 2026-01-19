@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+       img{
+            margin: 8px 0 0 43%;
+        }
+        section{
+            border: 1px solid black;
+            width: 30%;
+            margin: 4px auto 0 auto;
+            padding: 20px;
+        }
+
+        .login{
+            margin: 30px 0 0 0;
+            font-size: 18px;
+        }
+
+        .sub-btn{
+            width: 100%;
+            margin: 30px auto 25px auto;
+            background-color: #f3cd6c;
+            border: 0.5px solid black;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+        label{
+            font-weight: bolder;
+            margin: 20px 0 7px 0;
+        }
+
+        input{
+            width: 100%;
+            height: 35px;
+        }
+
+        .caption{
+            font-size: 13px;
+        }
+
+        a .forgot{
+            text-align: end;
+        }
+
+        a{
+            text-decoration-line: none;
+        }
+
+        .checkbox{
+            margin: 30px 0 30px 0;
+            font: 20px arial ;
+        }
+
+        .btn{
+            width: 100%;
+            margin: 30px auto 25px auto;
+            background-color: #edeff3;
+            border: 0.5px solid black;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+        span:after,
+        span:before{
+            content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+            text-decoration:line-through;
+        }
+
+        .new{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header><a href="index.html">
+        <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png" width="200px">
+    </a>
+    <section>
+        <form action="" class="container-fluid">
+            <h1>Sign-In</h1>
+            <label for="">Email(Phone for Mobile accounts)</label>
+            <div>
+                <input type="email">
+            </div>
+            <div class="d-flex justify-content-between">
+                <label for="">Password</label>
+                
+            </div>
+            <div>
+                <input type="password" required pattern="[a-Z 0-9]{6, }" placeholder="At least 6 Characters" >
+                <a class="forgot" href="">Forgot your password?</a>
+            </div>
+            <button class="sub-btn" type="submit">Sign-In</button>
+
+            <div class="caption">
+                By Continuing, You agree to Amazon's <a href="">Conditions of use</a> and <a href="">Privacy Notice</a>
+            </div>
+            <div class="checkbox">
+                <input style="width:unset; height:unset;" type="checkbox">
+                <label style="display: unset; font-weight: initial;" for="">Keep me signed In.</label>
+            </div>
+
+            
+
+            <span class="new"> New to Amazon? </span>
+            <a href="registration.html">
+                <div class="btn">
+                    Create your amazon Account
+                </div>
+            </a>
+        </form>
+    </section>
+</body>
+</html>
