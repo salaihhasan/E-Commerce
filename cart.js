@@ -111,7 +111,7 @@
 
 
       
-        cartTotalEl.textContent = total.toFixed(2);
+      cartTotalEl.textContent = total.toFixed(2);
 
 
 
@@ -141,5 +141,5 @@
         }   
 }
 
-
+// #testing 
 
