@@ -1,0 +1,50 @@
+.cart-wrapper {
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 28px;
+  position: relative;
+}
+
+.cart-icon sup {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: orange;
+  color: black;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.cart-panel {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 320px;
+  background: #fff;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  display: none;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cart-item span {
+  flex: 1;
+  font-size: 14px;
+}
+
+.cart-item input {
+  width: 45px;
+  text-align: center;
+}
