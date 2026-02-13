@@ -1,0 +1,7 @@
+footer{
+    width: 100vw;
+    min-height:25vh;
+    background-color: lightblue;
+    display: flex;
+    
+}
