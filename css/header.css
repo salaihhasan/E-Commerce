@@ -5,11 +5,17 @@
   padding: 0px 20px;
   background: #131921;
   color: white;
-  min-height: 30px;
+  min-height: 80px;
+  
+  position: sticky;
+  top: 0;
+  z-index: 1000;          
+  background: #131921;  
+
 }
 
 .focus {
-  padding: 0px 4px;
+  padding: 0px 10px;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -22,7 +28,7 @@
     display: block;
     margin-block-start: 20px;
     margin-block-end: 20;
-    font-size: 22px;
+    font-size: 29px;
     font-weight: 700;
 }
 
@@ -106,12 +112,13 @@
 .headerimg img {
   display: block;
   width: 100%;
-  height: 300px;
+  height: 500px;
   object-fit: fill;
   margin-top: 0px;
 }
 @media (max-width: 768px) {
   .headerimg img {
     height: 220px;
+    object-fit: cover;
   }
 }

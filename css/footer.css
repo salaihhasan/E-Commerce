@@ -1,7 +1,12 @@
-footer{
-    width: 100vw;
-    min-height:25vh;
-    background-color: lightblue;
-    display: flex;
-    
+.footer {
+  background: #131921;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.footer p {
+  margin: 0;
 }
