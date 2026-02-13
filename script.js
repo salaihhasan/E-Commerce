@@ -26,12 +26,13 @@
       list.forEach(product => {
         const div = document.createElement("div");
         div.className = "product";
-        div.style.backgroundColor = "white"
         div.innerHTML = `
           <img src="${product.image}" alt="${product.title}">
-          <h4>${product.title.substring(0, 40)}...</h4>
+          <div>
+          <h4>${product.title}</h4>
           <p>₹${product.price}</p>
           <button onclick="addToCart(${product.id})">Add to Cart</button>
+          </div>
         `;
         productsContainer.appendChild(div);
       });
@@ -140,6 +141,4 @@
             section.style.display = 'none';
         }   
 }
-
-// #testing 
 
