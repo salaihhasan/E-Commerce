@@ -7,6 +7,8 @@
     let products = [];
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+
+
     // Fetch products from Fake Store API
     fetch("https://fakestoreapi.com/products")
       .then(res => res.json())
@@ -16,7 +18,9 @@
         renderCart();
       });
 
-    // Render products
+
+
+   
     function renderProducts(list) {
       productsContainer.innerHTML = "";
       list.forEach(product => {
@@ -33,7 +37,9 @@
       });
     }
 
-    // Search functionality
+
+
+    
     searchInput.addEventListener("input", e => {
       const keyword = e.target.value.toLowerCase();
       const filtered = products.filter(p =>
@@ -42,7 +48,9 @@
       renderProducts(filtered);
     });
 
-    // Add to Cart
+
+
+    
     function addToCart(id) {
       const product = products.find(p => p.id === id);
       const existing = cart.find(item => item.id === id);
@@ -55,14 +63,18 @@
       renderCart();
     }
 
-    // Remove from Cart
+
+
+    
     function removeFromCart(id) {
       cart = cart.filter(item => item.id !== id);
       saveCart();
       renderCart();
     }
 
-    // Update quantity
+
+
+    
     function updateQuantity(id, qty) {
       const item = cart.find(i => i.id === id);
       if (item) {
@@ -72,7 +84,9 @@
       renderCart();
     }
 
-    // Render Cart
+
+
+    
     function renderCart() {
       cartItemsContainer.innerHTML = "";
       let total = 0;
@@ -94,32 +108,37 @@
       cartItemsContainer.appendChild(div);
     });
 
-      // total price
+
+
+      
         cartTotalEl.textContent = total.toFixed(2);
 
-     // cart icon number update
+
+
+    
       const cartValueEl = document.getElementById("value");
       cartValueEl.textContent = count;
     }
 
 
-    // Save cart to LocalStorage
+
+    
     function saveCart() {
       localStorage.setItem("cart", JSON.stringify(cart));
     }
 
-  function toggleSection() {
-    // Get the element by its ID
-    var section = document.getElementById('mySection');
 
-    // Check the current display style
-    if (section.style.display === 'none') {
-        // If hidden, show it (use 'block', 'flex', 'grid' as appropriate)
-        section.style.display = 'block';
-    } else {
-        // If visible, hide it
-        section.style.display = 'none';
-    }
+
+      function toggleSection() {
+        var section = document.getElementById('mySection');
+
+
+        if (section.style.display === 'none') {
+            section.style.display = 'block';
+
+        } else {
+            section.style.display = 'none';
+        }   
 }
 
 
